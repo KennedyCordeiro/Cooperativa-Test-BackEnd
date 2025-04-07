@@ -35,7 +35,7 @@
 <h3>Instalação</h3>
 <ol>
     <li>Clone o repositório:
-        <pre><code>git clone https://github.com/seu-usuario/cooperativa-api.git
+        <pre><code>git clone https://github.com/KennedyCordeiro/Cooperativa-Test.git
 cd cooperativa-api</code></pre>
     </li>
     <li>Configure o banco de dados:
