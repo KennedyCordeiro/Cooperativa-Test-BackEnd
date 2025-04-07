@@ -1,57 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #24292e;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #0366d6;
-            margin-top: 24px;
-            margin-bottom: 16px;
-        }
-        code {
-            background-color: #f6f8fa;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-        }
-        pre {
-            background-color: #f6f8fa;
-            padding: 16px;
-            border-radius: 6px;
-            overflow: auto;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .badge {
-            display: inline-block;
-            padding: 3px 6px;
-            border-radius: 3px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-right: 4px;
-        }
-        .badge-blue {
-            background-color: #0366d6;
-            color: white;
-        }
-        .badge-green {
-            background-color: #28a745;
-            color: white;
-        }
-    </style>
-</head>
+
 <body>
 
 <h1>Cooperativa API</h1>
