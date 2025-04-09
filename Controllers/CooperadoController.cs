@@ -1,6 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
 using CooperativaAPI.Models.Entities;
 using CooperativaAPI.Services;
+using CooperativaAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -24,7 +25,8 @@ public class CooperadosController : ControllerBase
     public async Task<IActionResult> GetById(int id)
     {
         var cooperado = await _service.GetByIdAsync(id);
-        if (cooperado == null) return NotFound();
+        if (cooperado == null)
+            return NotFound();
         return Ok(cooperado);
     }
 
@@ -52,7 +54,8 @@ public class CooperadosController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] Cooperado cooperado)
     {
-        if (id != cooperado.Id) return BadRequest();
+        if (id != cooperado.Id)
+            return BadRequest();
         await _service.UpdateAsync(cooperado);
         return NoContent();
     }

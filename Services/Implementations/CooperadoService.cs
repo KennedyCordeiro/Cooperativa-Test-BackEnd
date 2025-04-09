@@ -24,16 +24,12 @@ public class CooperadoService : ICooperadoService
 
     public async Task<IEnumerable<Cooperado>> GetByContaCorrenteAsync(string contaCorrente)
     {
-        return await _context.Cooperados
-            .Where(c => c.ContaCorrente == contaCorrente)
-            .ToListAsync();
+        return await _context.Cooperados.Where(c => c.ContaCorrente == contaCorrente).ToListAsync();
     }
 
     public async Task<IEnumerable<Cooperado>> GetByNomeAsync(string nome)
     {
-        return await _context.Cooperados
-            .Where(c => c.Nome.Contains(nome))
-            .ToListAsync();
+        return await _context.Cooperados.Where(c => c.Nome.Contains(nome)).ToListAsync();
     }
 
     public async Task<Cooperado> CreateAsync(Cooperado cooperado)
