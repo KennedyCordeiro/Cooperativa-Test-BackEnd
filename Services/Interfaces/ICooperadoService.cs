@@ -8,10 +8,10 @@ namespace CooperativaAPI.Services.Interfaces
     {
         Task<IEnumerable<Cooperado>> GetAllAsync();
         Task<Cooperado> GetByIdAsync(int id);
-        Task<Cooperado> CreateAsync(Cooperado cooperado);
+        Task<Cooperado> CreateAsync(string nome, string contaCorrente, int cooperativaId);
         Task UpdateAsync(Cooperado cooperado);
         Task DeleteAsync(int id);
-        Task<IEnumerable<Cooperado>> GetByContaCorrenteAsync(string conta);
+        Task<IEnumerable<Cooperado>> GetByContaCorrenteAsync(string contaCorrente);
         Task<IEnumerable<Cooperado>> GetByNomeAsync(string nome);
     }
 }

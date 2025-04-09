@@ -65,8 +65,6 @@ namespace CooperativaAPI.Services.Implementations
         }
     }
 
-    // Adicione este método no ContatoFavoritoService.cs
-
 }
 
 

@@ -33,7 +33,6 @@ namespace CooperativaAPI.Services.Implementations
             var cooperativa = await _context.Cooperativas.FindAsync(id);
             if (cooperativa != null)
             {
-                // Exclusão lógica (alternativa à física)
                 cooperativa.Ativo = false;
                 _context.Entry(cooperativa).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
